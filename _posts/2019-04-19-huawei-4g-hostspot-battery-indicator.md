@@ -184,7 +184,7 @@ if __name__ == "__main__":
     BatteryStatusApp().run()
 ~~~
 
-Thanks to rumps, the code is pretty simple. In constructor we initialize the session icon and title. We have just added some timeouts and error handling to our above code. Rather than calling req.get('http://192.168.2.1') everytime, we call it during initialization and when there is an error. We update the battery status every 60 seconds by using inbuilt rumps decorator
+Thanks to rumps, the code is pretty simple. In constructor we initialize the session icon and title. We have just added some timeouts and error handling to our above code. Rather than calling req.get('http://192.168.2.1') everytime, we call it during initialization and when there is an error. We update the battery status every 60 seconds by using inbuilt rumps decorator.
 
 ~~~ python
     @rumps.timer(60)
